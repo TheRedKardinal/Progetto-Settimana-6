@@ -6,9 +6,13 @@
 
 // Dico a JS di intercettare e di trattare l'elemento come un modale
 const modal = new bootstrap.Modal(document.getElementById('cardModal'));
+
+//
 const card = document.querySelectorAll('#servizi .card');
 const modalTitle = document.getElementById('cardModalTitle');
-const modalBody = document.getElementById('cardModalBody')
+const modalBody = document.getElementById('cardModalBody');
+const body = document.querySelector('body');
+const darkModeToggle = document.getElementById('dark-mode');
 
 card.forEach(c => {
     c.addEventListener('click', (e) => {
@@ -16,4 +20,8 @@ card.forEach(c => {
     modalBody.textContent = c.dataset.text;
     modal.show();
     })
+});
+
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
 });

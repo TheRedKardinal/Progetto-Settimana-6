@@ -167,5 +167,39 @@ footer {
     width: 80%;
     padding-left: 5px;
     padding-right: 5px;
-    font-size: myFonts.$standard-size *0.8;
+    font-size: myFonts.$standard-size * 0.8;
+}
+
+body.dark-mode {
+    background-color: hsl(20, 10%, 10%);
+
+    #servizi {
+        h2 {
+            color: myColors.$text-light;
+        }
+        p {
+            color: myColors.$text-light;
+        }
+        .card {
+            background-color: hsl(20, 10%, 18%);
+            h3 {
+                color: myColors.$text-light;
+            }
+            p {
+                color: myColors.$text-light;
+            }
+        }
+    }
+
+    #contatti {
+        .container-fluid {
+            background-color: hsl(20, 10%, 14%) !important;
+            h2 {
+                color: myColors.$text-light;
+            }
+            p {
+                color: myColors.$text-light;
+            }
+        }
+    }
 }

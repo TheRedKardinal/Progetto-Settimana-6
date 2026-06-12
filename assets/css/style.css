@@ -150,4 +150,32 @@ footer hr {
   font-size: 12.8px;
 }
 
+body.dark-mode {
+  background-color: hsl(20, 10%, 10%);
+}
+body.dark-mode #servizi h2 {
+  color: hsl(40, 30%, 90%);
+}
+body.dark-mode #servizi p {
+  color: hsl(40, 30%, 90%);
+}
+body.dark-mode #servizi .card {
+  background-color: hsl(20, 10%, 18%);
+}
+body.dark-mode #servizi .card h3 {
+  color: hsl(40, 30%, 90%);
+}
+body.dark-mode #servizi .card p {
+  color: hsl(40, 30%, 90%);
+}
+body.dark-mode #contatti .container-fluid {
+  background-color: hsl(20, 10%, 14%) !important;
+}
+body.dark-mode #contatti .container-fluid h2 {
+  color: hsl(40, 30%, 90%);
+}
+body.dark-mode #contatti .container-fluid p {
+  color: hsl(40, 30%, 90%);
+}
+
 /*# sourceMappingURL=style.css.map */
