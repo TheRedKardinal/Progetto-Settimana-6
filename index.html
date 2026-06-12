@@ -64,23 +64,52 @@
         <div class="card-body">
           <span class="d-block my-2">🪑</span>
           <h4 class="card-title">Interior design</h4>
-          <p class="card-text">Allestimenti d'interno per case e uffici, con materiali selezionati e arredo su misura.</p>
+          <p class="card-text">Allestimenti d'interno per case e uffici, con materiali selezionati e arredo su misura.
+          </p>
         </div>
       </div>
-    <!-- CARD 3 -->
-    <div class="col-12 col-md-4 card shadow border-0">
-      <div class="card-body">
-        <span class="d-block my-2">🧱</span>
-        <h4 class="card-title">Ristrutturazioni</h4>
-        <p class="card-text">Riqualificazione di spazi esterni, gestione dei lavori e coordinamento con le imprese.</p>
+      <!-- CARD 3 -->
+      <div class="col-12 col-md-4 card shadow border-0">
+        <div class="card-body">
+          <span class="d-block my-2">🧱</span>
+          <h4 class="card-title">Ristrutturazioni</h4>
+          <p class="card-text">Riqualificazione di spazi esterni, gestione dei lavori e coordinamento con le imprese.
+          </p>
+        </div>
       </div>
-    </div>
-
 
   </section>
 
   <section id="contatti">
+    <div class="container-fluid bg-light pt-5">
+    <h2 class="text-center">Contattaci</h2>
+    <p class="text-center">Compila il form, ti rispondiamo entro 48 ore.</p>
     <!-- Form contatti Bootstrap, larghezza limitata e centrata -->
+    <form action="submit">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="mb-3">
+        <label for="project-type" class="form-label">Tipo di progetto</label>
+        <select class="form-select" id="project-type">
+          <option selected></option>
+          <option value="1">Residenziale</option>
+          <option value="2">Interior design</option>
+          <option value="3">Ristrutturazione</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Messaggio</label>
+        <textarea class="form-control" id="message" rows="5"></textarea>
+      </div>
+      <button class="btn btn-primary w-100 text-light">Invia</button>
+    </form>
+    </div>
   </section>
 
   <footer>
