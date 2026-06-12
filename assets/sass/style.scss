@@ -1,9 +1,8 @@
 // Atelier — Week Project Settimana VI
 // Definisci qui le tue variabili, mixin, override Bootstrap.
-
+@use 'partial/colors.scss' as myColors;
 
 // === Variabili (definisci $brand-primary, $brand-secondary, $radius-base, ecc.) ===
-
 
 
 // === Mixin (definisci almeno @mixin card-elevata o equivalente) ===
@@ -11,7 +10,15 @@
 
 
 // === Override Bootstrap (sovrascrivi .btn-primary, .bg-primary, .text-primary col tuo colore brand) ===
+.bg-primary, .btn-primary {
+    background-color: myColors.$brand-primary !important;
+}
 
+.bg-secondary {
+    background-color: myColors.$brand-secondary !important;
+}
 
-
+.shadow {
+    box-shadow: myColors.$card-shadow !important;
+}
 // === Stili custom delle sezioni (header sticky, hero, servizi, contatti, footer) ===
