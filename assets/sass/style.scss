@@ -214,6 +214,9 @@ body.dark-mode {
             p {
                 color: myColors.$text-light;
             }
+            .form-label {
+                color: myColors.$text-light;
+            }
         }
     }
 }
