@@ -51,30 +51,36 @@
     <!-- CARD 1 -->
     <div class="row mt-5 gy-2">
       <!-- CARD 1 -->
-      <div class="col-12 col-md-4 card shadow border-0">
+      <div class="col-12 col-md-4 card shadow border-0"
+           data-bs-toggle="modal" data-bs-target="#cardModal"
+           data-title="Progettazione residenziale"
+           data-text="Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla consegna delle chiavi.">
         <div class="card-body">
           <span class="d-block my-2">🏠</span>
           <h3 class="card-title">Progettazione residenziale</h3>
-          <p class="card-text">Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla consegna delle
-            chiavi.</p>
+          <p class="card-text">Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla consegna delle chiavi.</p>
         </div>
       </div>
       <!-- CARD 2 -->
-      <div class="col-12 col-md-4 card shadow border-0">
+      <div class="col-12 col-md-4 card shadow border-0"
+           data-bs-toggle="modal" data-bs-target="#cardModal"
+           data-title="Interior design"
+           data-text="Allestimenti d'interno per case e uffici, con materiali selezionati e arredo su misura.">
         <div class="card-body">
           <span class="d-block my-2">🪑</span>
           <h3 class="card-title">Interior design</h3>
-          <p class="card-text">Allestimenti d'interno per case e uffici, con materiali selezionati e arredo su misura.
-          </p>
+          <p class="card-text">Allestimenti d'interno per case e uffici, con materiali selezionati e arredo su misura.</p>
         </div>
       </div>
       <!-- CARD 3 -->
-      <div class="col-12 col-md-4 card shadow border-0">
+      <div class="col-12 col-md-4 card shadow border-0"
+           data-bs-toggle="modal" data-bs-target="#cardModal"
+           data-title="Ristrutturazioni"
+           data-text="Riqualificazione di spazi esterni, gestione dei lavori e coordinamento con le imprese.">
         <div class="card-body">
           <span class="d-block my-2">🧱</span>
           <h3 class="card-title">Ristrutturazioni</h3>
-          <p class="card-text">Riqualificazione di spazi esterni, gestione dei lavori e coordinamento con le imprese.
-          </p>
+          <p class="card-text">Riqualificazione di spazi esterni, gestione dei lavori e coordinamento con le imprese.</p>
         </div>
       </div>
 
@@ -139,16 +145,26 @@
         <p class="m-0">info@atelier.example</p>
         <p class="m-0">+39 02 0000 1111</p>
       </div>
-      
+
       <hr />
 
       <p class="text-center mt-0">&copy; 2026 Atelier - tutti i diritti riservati</p>
 
     </div>
 
-
-
   </footer>
+
+  <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cardModalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+        </div>
+        <div class="modal-body" id="cardModalBody"></div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
