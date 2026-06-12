@@ -1,4 +1,5 @@
-.bg-primary, .btn-primary {
+.bg-primary,
+.btn-primary {
   background-color: hsl(20, 20%, 15%) !important;
 }
 
@@ -26,15 +27,20 @@ header .navbar-toggler:hover {
 }
 #studio p {
   color: hsl(40, 30%, 90%);
+  font-size: 22.4px;
 }
 #studio a {
   color: hsl(40, 30%, 90%);
+  font-size: 22.4px;
 }
 #studio {
   min-height: 45vh;
 }
 #studio .container {
   max-width: 80%;
+}
+#studio .btn:hover {
+  background-color: hsl(20, 30%, 25%);
 }
 
 /*# sourceMappingURL=style.css.map */
