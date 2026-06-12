@@ -16,6 +16,14 @@ header {
   top: 0;
   z-index: 1000;
 }
+@media (min-width: 768px) {
+  header .navbar-collapse {
+    order: 1;
+  }
+  header #nav-buttons {
+    order: 2;
+  }
+}
 header .navbar-toggler {
   transition: background-color 0.2s ease-in-out;
 }
@@ -162,7 +170,7 @@ body.dark-mode {
   background-color: hsl(20, 10%, 10%);
 }
 body.dark-mode #servizi h2 {
-  color: hsl(40, 30%, 90%);
+  color: hsl(40, 30%, 90%) !important;
 }
 body.dark-mode #servizi p {
   color: hsl(40, 30%, 90%);

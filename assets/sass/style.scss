@@ -47,6 +47,11 @@ header {
     top: 0;
     z-index: 1000;
 
+    @media (min-width: 768px) {
+        .navbar-collapse { order: 1; }
+        #nav-buttons     { order: 2; }
+    }
+
     .navbar-toggler {
         transition: background-color 0.2s ease-in-out;
 
@@ -184,7 +189,7 @@ body.dark-mode {
 
     #servizi {
         h2 {
-            color: myColors.$text-light;
+            color: myColors.$text-light !important;
         }
         p {
             color: myColors.$text-light;
