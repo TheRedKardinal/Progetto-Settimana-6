@@ -48,8 +48,13 @@ header {
     z-index: 1000;
 
     @media (min-width: 768px) {
-        .navbar-collapse { order: 1; }
-        #nav-buttons     { order: 2; }
+        .navbar-collapse {
+            order: 1;
+        }
+
+        #nav-buttons {
+            order: 2;
+        }
     }
 
     .navbar-toggler {
@@ -156,13 +161,16 @@ footer {
         width: 95%;
         margin: 0 auto;
     }
+
     h4 {
         color: white;
         font-size: myFonts.$standard-size * 1.3;
     }
+
     p {
         color: myColors.$text-light;
     }
+
     hr {
         border-color: myColors.$text-light;
     }
@@ -191,14 +199,18 @@ body.dark-mode {
         h2 {
             color: myColors.$text-light !important;
         }
+
         p {
             color: myColors.$text-light;
         }
+
         .card {
             background-color: hsl(20, 10%, 18%);
+
             h3 {
                 color: myColors.$text-light;
             }
+
             p {
                 color: myColors.$text-light;
             }
@@ -208,12 +220,15 @@ body.dark-mode {
     #contatti {
         .container-fluid {
             background-color: hsl(20, 10%, 14%) !important;
+
             h2 {
                 color: myColors.$text-light;
             }
+
             p {
                 color: myColors.$text-light;
             }
+
             .form-label {
                 color: myColors.$text-light;
             }
