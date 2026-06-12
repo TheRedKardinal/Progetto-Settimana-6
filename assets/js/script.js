@@ -51,9 +51,11 @@ form.addEventListener('submit', (e) => {
 
     formOutput.classList.remove('d-none');
     formOutput.classList.add('mt-4', 'p-3');
-    
+
     formOutput.appendChild(nameOutput);
     formOutput.appendChild(emailOutput);
     formOutput.appendChild(projectOutput);
     formOutput.appendChild(messageOutput);
+
+    form.reset();
 });

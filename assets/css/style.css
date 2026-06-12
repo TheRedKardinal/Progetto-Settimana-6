@@ -104,7 +104,7 @@ header .navbar-toggler:hover {
   font-size: 22.4px;
 }
 #contatti {
-  margin: 50px auto;
+  margin-top: 50px;
 }
 #contatti .container-fluid h2 {
   font-size: 25.6px;

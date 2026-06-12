@@ -111,7 +111,7 @@ header {
 /* ***** CONTATTI ***** */
 #contatti {
     @include text(black, gray, myFonts.$standard-size, bold);
-    margin: 50px auto;
+    margin-top: 50px;
 
     .container-fluid {
 
