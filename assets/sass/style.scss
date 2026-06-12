@@ -161,3 +161,11 @@ footer {
         border-color: myColors.$text-light;
     }
 }
+
+/* ***** DARK MODE ***** */
+#dark-mode {
+    width: 80%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: myFonts.$standard-size *0.8;
+}
