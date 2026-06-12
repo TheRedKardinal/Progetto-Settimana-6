@@ -89,22 +89,24 @@
 
   </section>
 
-  <section id="contatti">
-    <div class="container-fluid bg-light pt-5">
+  <section id="contatti" class="bg-light">
+    <div class="container-fluid pt-5">
       <h2 class="text-center">Contattaci</h2>
       <p class="text-center">Compila il form, ti rispondiamo entro 48 ore.</p>
       <!-- Form contatti Bootstrap, larghezza limitata e centrata -->
       <div class="row justify-content-center">
         <!-- Due div per creare layuout responsive da BootStrap -->
         <div class="col-12 col-md-8 col-lg-6">
-          <form action="submit">
+          <form id="contact-form" novalidate>
             <div class="mb-3">
               <label for="name" class="form-label">Nome</label>
               <input type="text" class="form-control" id="name" required>
+              <div class="invalid-feedback">Inserisci il tuo nome!</div>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Inserisci un indirizzo email valido!</div>
             </div>
             <div class="mb-3">
               <label for="project-type" class="form-label">Tipo di progetto</label>
@@ -114,13 +116,16 @@
                 <option value="2">Interior design</option>
                 <option value="3">Ristrutturazione</option>
               </select>
+              <div class="invalid-feedback">Seleziona un tipo di progetto!</div>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Messaggio</label>
               <textarea class="form-control" id="message" rows="5" required></textarea>
+              <div class="invalid-feedback">Scrivi un messaggio!</div>
             </div>
             <button class="btn btn-primary w-100 text-light">Invia</button>
           </form>
+          <div id="form-output" class=" d-none"></div>
         </div>
       </div>
     </div>
