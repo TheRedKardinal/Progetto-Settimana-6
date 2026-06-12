@@ -66,10 +66,26 @@ header {
 #servizi {
     @include text(black, gray, myFonts.$standard-size, bold);
     margin: 50px auto;
+
     h2 {
         font-size: myFonts.$standard-size * 1.6;
     }
+
     p {
         font-size: myFonts.$standard-size;
+    }
+
+    // card
+    .card {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        span {
+            font-size: myFonts.$standard-size * 2.5;
+        }
+        h4 {
+            font-weight: bold;
+        }
+
     }
 }
