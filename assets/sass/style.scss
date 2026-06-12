@@ -47,8 +47,12 @@ header {
     top: 0;
     z-index: 1000;
 
-    .navbar-toggler:hover {
-        background-color: myColors.$hover;
+    .navbar-toggler {
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: myColors.$hover;
+        }
     }
 }
 
@@ -57,9 +61,15 @@ header {
     @include text(white, myColors.$text-light, myFonts.$standard-size, bold);
     min-height: 45vh;
 
-    .btn:hover {
-        background-color: myColors.$hover;
+    .btn {
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: myColors.$hover;
+        }
     }
+
+
 }
 
 /* ***** SERVIZI ***** */
@@ -85,8 +95,15 @@ header {
             font-size: myFonts.$standard-size * 2.5;
         }
 
-        h4 {
+        h3 {
+            font-size: myFonts.$standard-size * 1.2;
             font-weight: bold;
+        }
+
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: translateY(-3px);
         }
     }
 }
@@ -96,22 +113,42 @@ header {
     @include text(black, gray, myFonts.$standard-size, bold);
     margin: 50px auto;
 
-.container-fluid {
-    
+    .container-fluid {
+
+        h2 {
+            font-size: myFonts.$standard-size * 1.6;
+        }
+
+        p {
+            font-size: myFonts.$standard-size;
+        }
+
+        form {
+            .btn {
+                transition: background-color 0.2s ease-in-out;
+
+                &:hover {
+                    background-color: myColors.$brand-primary !important;
+                }
+            }
+
+
+            .btn-primary {
+                color: myColors.$text-light !important;
+                background-color: myColors.$brand-secondary !important;
+            }
+        }
+
+    }
 }
 
-    h2 {
-        font-size: myFonts.$standard-size * 1.6;
+/* ***** FOOTER ***** */
+footer {
+    background-color: myColors.$brand-primary;
+    h4 {
+        color: white;
     }
-
     p {
-        font-size: myFonts.$standard-size;
+        color: myColors.$text-light;
     }
-
-    form {
-        .btn-primary {
-            background-color: myColors.$brand-secondary !important;
-        }
-    }
-
 }

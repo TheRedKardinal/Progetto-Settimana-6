@@ -16,6 +16,9 @@ header {
   top: 0;
   z-index: 1000;
 }
+header .navbar-toggler {
+  transition: background-color 0.2s ease-in-out;
+}
 header .navbar-toggler:hover {
   background-color: hsl(20, 30%, 25%);
 }
@@ -36,6 +39,9 @@ header .navbar-toggler:hover {
 }
 #studio {
   min-height: 45vh;
+}
+#studio .btn {
+  transition: background-color 0.2s ease-in-out;
 }
 #studio .btn:hover {
   background-color: hsl(20, 30%, 25%);
@@ -72,8 +78,15 @@ header .navbar-toggler:hover {
 #servizi .card span {
   font-size: 40px;
 }
-#servizi .card h4 {
+#servizi .card h3 {
+  font-size: 19.2px;
   font-weight: bold;
+}
+#servizi .card {
+  transition: transform 0.2s ease-in-out;
+}
+#servizi .card:hover {
+  transform: translateY(-3px);
 }
 
 /* ***** CONTATTI ***** */
@@ -93,14 +106,32 @@ header .navbar-toggler:hover {
 #contatti {
   margin: 50px auto;
 }
-#contatti h2 {
+#contatti .container-fluid h2 {
   font-size: 25.6px;
 }
-#contatti p {
+#contatti .container-fluid p {
   font-size: 16px;
 }
-#contatti form .btn-primary {
+#contatti .container-fluid form .btn {
+  transition: background-color 0.2s ease-in-out;
+}
+#contatti .container-fluid form .btn:hover {
+  background-color: hsl(20, 20%, 15%) !important;
+}
+#contatti .container-fluid form .btn-primary {
+  color: hsl(40, 30%, 90%) !important;
   background-color: hsl(20, 30%, 35%) !important;
+}
+
+/* ***** FOOTER ***** */
+footer {
+  background-color: hsl(20, 20%, 15%);
+}
+footer h4 {
+  color: white;
+}
+footer p {
+  color: hsl(40, 30%, 90%);
 }
 
 /*# sourceMappingURL=style.css.map */
