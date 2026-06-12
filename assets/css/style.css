@@ -10,4 +10,31 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12) !important;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .navbar-toggler:hover {
+  background-color: hsl(20, 30%, 25%);
+}
+
+#studio h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+#studio p {
+  color: hsl(40, 30%, 90%);
+}
+#studio a {
+  color: hsl(40, 30%, 90%);
+}
+#studio {
+  min-height: 45vh;
+}
+#studio .container {
+  max-width: 80%;
+}
+
 /*# sourceMappingURL=style.css.map */

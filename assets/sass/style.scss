@@ -1,12 +1,25 @@
 // Atelier — Week Project Settimana VI
 // Definisci qui le tue variabili, mixin, override Bootstrap.
 @use 'partial/colors.scss' as myColors;
+@use 'partial/fonts.scss' as myFonts;
 
 // === Variabili (definisci $brand-primary, $brand-secondary, $radius-base, ecc.) ===
 
 
 // === Mixin (definisci almeno @mixin card-elevata o equivalente) ===
-
+@mixin text ($color-h2, $color-p, $font-size, $font-weight) {
+    h2 {
+        color: $color-h2;
+        font-size: $font-size * 2;
+        font-weight: $font-weight;
+    }
+    p {
+        color: $color-p;
+    }
+    a {
+        color: $color-p;
+    }
+}
 
 
 // === Override Bootstrap (sovrascrivi .btn-primary, .bg-primary, .text-primary col tuo colore brand) ===
@@ -22,3 +35,21 @@
     box-shadow: myColors.$card-shadow !important;
 }
 // === Stili custom delle sezioni (header sticky, hero, servizi, contatti, footer) ===
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    .navbar-toggler:hover {
+        background-color: myColors.$hover;
+    }
+}
+
+#studio {
+    @include text(white, myColors.$text-light, myFonts.$standard-size, bold);
+    min-height: 45vh;
+    .container {
+        max-width: 80%;
+    }
+}
+
