@@ -13,6 +13,7 @@ const modalTitle = document.getElementById('cardModalTitle');
 const modalBody = document.getElementById('cardModalBody');
 const body = document.querySelector('body');
 const darkModeToggle = document.getElementById('dark-mode');
+const submitForm = document.querySelector('form');
 
 card.forEach(c => {
     c.addEventListener('click', (e) => {
@@ -24,4 +25,9 @@ card.forEach(c => {
 
 darkModeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
+
 });
+
+submitForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+})
