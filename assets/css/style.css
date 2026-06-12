@@ -20,6 +20,7 @@ header .navbar-toggler:hover {
   background-color: hsl(20, 30%, 25%);
 }
 
+/* ***** HERO ***** */
 #studio h2 {
   color: white;
   font-size: 32px;
@@ -36,11 +37,32 @@ header .navbar-toggler:hover {
 #studio {
   min-height: 45vh;
 }
-#studio .container {
-  max-width: 80%;
-}
 #studio .btn:hover {
   background-color: hsl(20, 30%, 25%);
+}
+
+/* ***** SERVIZI ***** */
+#servizi h2 {
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+}
+#servizi p {
+  color: gray;
+  font-size: 22.4px;
+}
+#servizi a {
+  color: gray;
+  font-size: 22.4px;
+}
+#servizi {
+  margin: 50px auto;
+}
+#servizi h2 {
+  font-size: 25.6px;
+}
+#servizi p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

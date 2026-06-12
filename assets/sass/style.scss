@@ -52,15 +52,24 @@ header {
     }
 }
 
+/* ***** HERO ***** */
 #studio {
     @include text(white, myColors.$text-light, myFonts.$standard-size, bold);
     min-height: 45vh;
 
-    .container {
-        max-width: 80%;
-    }
-
     .btn:hover {
         background-color: myColors.$hover;
+    }
+}
+
+/* ***** SERVIZI ***** */
+#servizi {
+    @include text(black, gray, myFonts.$standard-size, bold);
+    margin: 50px auto;
+    h2 {
+        font-size: myFonts.$standard-size * 1.6;
+    }
+    p {
+        font-size: myFonts.$standard-size;
     }
 }
